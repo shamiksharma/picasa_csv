@@ -16,7 +16,7 @@ OR
 
 open a terminal
 % cd   your-preferred-folder
-% curl "https://github.com/shamiksharma/picasa_csv/raw/master/picasaparse.py" -o picasaparse.py
+% curl 'https://github.com/shamiksharma/picasa_csv/raw/master/picasaparse.py' -o picasaparse.py
 
 
 Usage (from terminal) :
@@ -24,7 +24,7 @@ Usage (from terminal) :
 % python picasaparse.py  your-picasa-api-url  >  your-csv-file-name.csv
 
 Example: 
-% python picasaparse.py "https://picasaweb.google.com/data/feed/api/all?kind=photo" > mydatafile.csv
+% python picasaparse.py 'https://picasaweb.google.com/data/feed/api/all?kind=photo' > mydatafile.csv
 
 
 
