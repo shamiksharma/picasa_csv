@@ -1,0 +1,20 @@
+This is a python utility that grabs data from Picasa and converts it into CSV format.
+
+Pre-requirements
+----------------
+Needs Python 2.6+ (this should be built-in on MacOS)
+
+Usage (from terminal) :
+-----------------------
+% python picasaparse.py  your-picasa-api-url  >  your-csv-file-name.csv
+
+Example: 
+-------------
+% python picasaparse.py "https://picasaweb.google.com/data/feed/api/all?kind=photo" > mydatafile.csv
+
+Spreadsheet:
+-------------
+You can then load mydatafile.csv into a spreadsheet and analyse it.
+The first line of the CSV file is a "column-header" line which 
+describes the columns. Excel and other spreadsheets allow you to
+specify that the first line should be treated as a header when importing.
