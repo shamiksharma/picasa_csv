@@ -21,7 +21,7 @@ open a terminal
 
 Usage (from terminal) :
 -----------------------
-% python picasaparse.py  your-picasa-api-url  >  your-csv-file-name.csv
+% python picasaparse.py  'your-picasa-api-url'  >  your-csv-file-name.csv
 
 Example: 
 % python picasaparse.py 'https://picasaweb.google.com/data/feed/api/all?kind=photo' > mydatafile.csv

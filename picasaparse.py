@@ -30,7 +30,7 @@ def extractTags(node, entryData):
     index = tagList.index(tag)
     entryData[index] = removeCommas(removeNonAscii(node.text))
   except ValueError:
-    print "Error (%s) %s"  % (node.text, tag)
+    sys.stderr.write( "Error (%s) %s"  % (node.text, tag) )
 
 
 def traverse(node,func,params):
@@ -55,7 +55,7 @@ def main():
     req = urllib2.Request(picasaURL)
     res = urllib2.urlopen(req)
   except IOError:
-    print "Not a valid URL"
+    sys.stderr.write( "Not a valid URL" )
 
   exif_ns    = "http://schemas.google.com/photos/exif/2007"
   default_ns = 'http://www.w3.org/2005/Atom'
