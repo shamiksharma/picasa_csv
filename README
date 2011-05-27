@@ -4,17 +4,40 @@ Pre-requirements
 ----------------
 Needs Python 2.6+ (this should be built-in on MacOS)
 
+Download
+----------
+Download the picasaparser.py script and put it in some folder.
+
+You can just go to 
+  https://github.com/shamiksharma/picasa_csv/raw/master/picasaparse.py
+and copy paste the content into a file called picasaparse.py
+
+OR
+
+open a terminal
+% cd   your-preferred-folder
+% curl "https://github.com/shamiksharma/picasa_csv/raw/master/picasaparse.py" -o picasaparse.py
+
+
 Usage (from terminal) :
 -----------------------
 % python picasaparse.py  your-picasa-api-url  >  your-csv-file-name.csv
 
 Example: 
--------------
 % python picasaparse.py "https://picasaweb.google.com/data/feed/api/all?kind=photo" > mydatafile.csv
+
+
 
 Spreadsheet:
 -------------
+
 You can then load mydatafile.csv into a spreadsheet and analyse it.
+
 The first line of the CSV file is a "column-header" line which 
 describes the columns. Excel and other spreadsheets allow you to
 specify that the first line should be treated as a header when importing.
+
+Note that some rows of the input might not be correctly aligned (due to
+special characters in the input etc). You should eyeball the data and
+remove any such rows from the spreadsheet.
+
