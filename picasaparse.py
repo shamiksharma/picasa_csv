@@ -86,6 +86,7 @@ def main():
   # For histogramming. Not yet working.
   #
 
+  """
   pp = pprint.PrettyPrinter(indent=2)
   plotList = ['focallength', 'exposure', 'make', 'model', 'iso', 'fstop']
 
@@ -106,6 +107,7 @@ def main():
       continue 
     #print "%s :" % tagList[index],
     #pp.pprint( attributes[index] )
+  """
 
 if __name__ == '__main__':
    main()
